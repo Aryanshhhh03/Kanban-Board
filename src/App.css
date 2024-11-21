@@ -1,0 +1,67 @@
+/* Horizontal Taskbar Styling */
+.taskbar {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Dropdown Styling */
+.dropdown {
+  position: relative;
+  margin-right: 15px;
+}
+
+.dropdown-button {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  gap: 8px;
+}
+
+.icon-filter {
+  font-size: 16px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  z-index: 1000;
+  width: 200px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown Section Styling */
+.dropdown-section {
+  margin-bottom: 15px;
+}
+
+.dropdown-section label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.dropdown-section select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}

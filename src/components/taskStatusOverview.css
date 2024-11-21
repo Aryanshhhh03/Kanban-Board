@@ -1,0 +1,33 @@
+.task-status-overview {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .task-column {
+    flex: 1;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .column-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .task-count {
+    background: #dee2e6;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.9em;
+  }
+  

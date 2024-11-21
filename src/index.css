@@ -1,0 +1,89 @@
+/* General App Styling */
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Display Bar Styling */
+.display-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f0f0f0; /* Light gray background */
+  border-bottom: 1px solid #ddd; /* Light gray border */
+  position: relative; /* Required for dropdown positioning */
+  z-index: 10;
+}
+
+/* Dropdown Button Styling */
+.display-dropdown-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* Dark gray text */
+  position: relative;
+}
+
+/* Dropdown Content Styling */
+.display-dropdown-content {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 35px; /* Position below the button */
+  left: 0;
+  background-color: #fff; /* White background */
+  min-width: 150px; /* Minimum width for the dropdown */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border: 1px solid #ddd; /* Border for better visibility */
+  border-radius: 4px; /* Rounded corners */
+  z-index: 100; /* Ensure the dropdown is on top of other elements */
+}
+
+/* Show Dropdown on Hover */
+.display-dropdown-btn:hover .display-dropdown-content,
+.display-dropdown-btn:focus-within .display-dropdown-content {
+  display: block; /* Show the dropdown on hover or focus */
+}
+
+/* Dropdown Item Group */
+.dropdown-group {
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0; /* Light divider between options */
+}
+
+.dropdown-group:last-child {
+  border-bottom: none; /* Remove border for the last group */
+}
+
+.dropdown-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555; /* Medium gray text */
+}
+
+.dropdown-group select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  outline: none; /* Remove blue outline on focus */
+}
+
+.dropdown-group select:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle blue glow */
+}
+
+/* Utility Classes */
+.hidden {
+  display: none !important;
+}
